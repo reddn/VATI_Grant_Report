@@ -77,13 +77,13 @@ def runFile(fn,separator):
 	
 	#name
 	# print(name)
-	outputA.append(name[0].replace("\t"," ").split(" | ")[0])
+	outputA.append(name[0].replace("\t"," ").split(" | ")[0].strip())
 	
 	#contractor
-	outputA.append(name[0].replace("\t"," ").split(" | ")[1])
+	outputA.append(name[0].replace("\t"," ").split(" | ")[1].strip())
 	
 	#fy
-	outputA.append(name[1].replace("\t"," "))
+	outputA.append(name[1].replace("\t"," ").strip())
 		
 	#miles
 	milesNum = fiberMileage[2].replace("(","").replace(")","").split("\t")[0]
